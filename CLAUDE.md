@@ -1,3 +1,25 @@
+# notebooklm-py
+
+Unofficial Python client for Google NotebookLM that uses undocumented `batchexecute` RPC APIs. Enables programmatic notebook management, source integration, AI querying, and studio artifact generation (podcasts, videos, quizzes, slide decks).
+
+**Stack:** Python 3.12+ · uv · async httpx · Click CLI · playwright (auth)
+**Status:** active
+**Last session:** 2026-04-05 — Personal use case: built Audi S4 service guide notebook with Perplexity deep research feeding into NotebookLM.
+**Next up:** [Unknown - needs manual review]
+
+## Entry points
+- `src/notebooklm/client.py` — main `NotebookLMClient` class with namespaced APIs
+- `src/notebooklm/cli/__init__.py` — Click-based CLI (`notebooklm` command)
+- `src/notebooklm/rpc/types.py` — RPC method IDs (source of truth, subject to Google breakage)
+- `src/notebooklm/_core.py` — HTTP and RPC infrastructure
+- `pyproject.toml` — uv project config
+
+## Connections
+- **Critical dependency:** Google's internal `batchexecute` RPC protocol with obfuscated method IDs that Google can change at any time
+- **Auth:** `playwright install chromium` required, login via `notebooklm login`
+
+<!-- ── hub end ── -->
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
