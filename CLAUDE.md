@@ -4,8 +4,8 @@ Unofficial Python client for Google NotebookLM that uses undocumented `batchexec
 
 **Stack:** Python 3.12+ · uv · async httpx · Click CLI · playwright (auth)
 **Status:** active
-**Last session:** 2026-04-05 — Personal use case: built Audi S4 service guide notebook with Perplexity deep research feeding into NotebookLM.
-**Next up:** [Unknown - needs manual review]
+**Last session:** 2026-05-09 — Water Technology research delivered (queue prompt 07/7; notebook `1bb460d5-bec9-406d-96c4-0e3548df977a`, 381 sources, 7 deliverables at `C:/Users/nosle/Claude's Creations/_core/research/lm-research/water-technology/`). 6 detailing-research prompts remain queued at `_prompts-queue/01-` through `_prompts-queue/06-` for fresh-chat runs. Repo working tree unchanged.
+**Next up:** Optional follow-up research target — 991.2 / 992 GT3 family (MA2 engine, 4.0L NA flat-six) — completes the full Type 991+992 era forensic record paired with the 9A2 turbo audit and this 991.1 NA audit.
 
 ## Entry points
 - `src/notebooklm/client.py` — main `NotebookLMClient` class with namespaced APIs
