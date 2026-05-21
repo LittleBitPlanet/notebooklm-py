@@ -4,8 +4,8 @@ Unofficial Python client for Google NotebookLM that uses undocumented `batchexec
 
 **Stack:** Python 3.12+ · uv · async httpx · Click CLI · playwright (auth)
 **Status:** active
-**Last session:** 2026-05-09 — Water Technology research delivered (queue prompt 07/7; notebook `1bb460d5-bec9-406d-96c4-0e3548df977a`, 381 sources, 7 deliverables at `C:/Users/nosle/Claude's Creations/_core/research/lm-research/water-technology/`). 6 detailing-research prompts remain queued at `_prompts-queue/01-` through `_prompts-queue/06-` for fresh-chat runs. Repo working tree unchanged.
-**Next up:** Optional follow-up research target — 991.2 / 992 GT3 family (MA2 engine, 4.0L NA flat-six) — completes the full Type 991+992 era forensic record paired with the 9A2 turbo audit and this 991.1 NA audit.
+**Last session:** 2026-05-14 — Workflow cleanup (NOT a research session): 6 untracked research SAVE files migrated from this folder to their matching `C:/Users/nosle/Claude's Creations/_core/lm-research/<topic>/` folders; this hub block rewritten to code-repo-only state; one doctrine line added to `C:/Users/nosle/Claude's Creations/LLMTools/CLAUDE.md` saying research sessions run from `_core/lm-research/<topic>/`, not this repo. 5 tracked research SAVE files deferred here pending the branch-strategy decision in `LLMTools/CLAUDE.md` line 25 (fork divergence vs upstream `teng-lin/main`). Last actual code work was 2026-04-04 (PR #240 + #245 merges).
+**Next up:** File an issue against this repo for the `IMPORT_RESEARCH` RPC-retry duplication pattern — duplicate factor 1.87×–2.41× across 5 separate research notebooks (water-tech, wash-and-dry, wheels-and-tires, chemical-decontamination, interior). The retry-on-timeout logic re-fires the import RPC before detecting server-side completion, producing 2–2.4× source-row duplication that the user is permission-blocked from cleaning up afterward.
 
 ## Entry points
 - `src/notebooklm/client.py` — main `NotebookLMClient` class with namespaced APIs
