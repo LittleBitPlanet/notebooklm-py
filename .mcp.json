@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "serena": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena@7fcbca7e62555ec2287ddb2f083caee805848ea6",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "claude-code",
+        "--project",
+        "C:/Users/nosle/claudes-creations/LLMTools/notebooklm-py"
+      ],
+      "env": {}
+    }
+  }
+}
