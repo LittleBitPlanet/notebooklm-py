@@ -3,9 +3,9 @@
 Unofficial Python client for Google NotebookLM that uses undocumented `batchexecute` RPC APIs. Enables programmatic notebook management, source integration, AI querying, and studio artifact generation (podcasts, videos, quizzes, slide decks).
 
 **Stack:** Python 3.12+ · uv · async httpx · Click CLI · playwright (auth)
-**Status:** active
-**Last session:** 2026-05-14 — Workflow cleanup (NOT a research session): 6 untracked research SAVE files migrated from this folder to their matching `C:/Users/nosle/claudes-creations/_core/lm-research/<topic>/` folders; this hub block rewritten to code-repo-only state; one doctrine line added to `C:/Users/nosle/claudes-creations/LLMTools/CLAUDE.md` saying research sessions run from `_core/lm-research/<topic>/`, not this repo. 5 tracked research SAVE files deferred here pending the branch-strategy decision in `LLMTools/CLAUDE.md` line 25 (fork divergence vs upstream `teng-lin/main`). Last actual code work was 2026-04-04 (PR #240 + #245 merges).
-**Next up:** File an issue against this repo for the `IMPORT_RESEARCH` RPC-retry duplication pattern — duplicate factor 1.87×–2.41× across 5 separate research notebooks (water-tech, wash-and-dry, wheels-and-tires, chemical-decontamination, interior). The retry-on-timeout logic re-fires the import RPC before detecting server-side completion, producing 2–2.4× source-row duplication that the user is permission-blocked from cleaning up afterward.
+Status: active
+Last session: 2026-05-14 — Workflow cleanup (NOT a research session): 6 untracked research SAVE files migrated from this folder to their matching `C:/Users/nosle/claudes-creations/_core/lm-research/<topic>/` folders; this hub block rewritten to code-repo-only state; one doctrine line added to `C:/Users/nosle/claudes-creations/LLMTools/CLAUDE.md` saying research sessions run from `_core/lm-research/<topic>/`, not this repo. 5 tracked research SAVE files deferred here pending the branch-strategy decision in `LLMTools/CLAUDE.md` line 25 (fork divergence vs upstream `teng-lin/main`). Last actual code work was 2026-04-04 (PR #240 + #245 merges).
+Next up: File an issue against this repo for the `IMPORT_RESEARCH` RPC-retry duplication pattern — duplicate factor 1.87×–2.41× across 5 separate research notebooks (water-tech, wash-and-dry, wheels-and-tires, chemical-decontamination, interior). The retry-on-timeout logic re-fires the import RPC before detecting server-side completion, producing 2–2.4× source-row duplication that the user is permission-blocked from cleaning up afterward.
 
 ## Entry points
 - `src/notebooklm/client.py` — main `NotebookLMClient` class with namespaced APIs
@@ -18,7 +18,6 @@ Unofficial Python client for Google NotebookLM that uses undocumented `batchexec
 - **Critical dependency:** Google's internal `batchexecute` RPC protocol with obfuscated method IDs that Google can change at any time
 - **Auth:** `playwright install chromium` required, login via `notebooklm login`
 
-<!-- ── hub end ── -->
 
 # CLAUDE.md
 
